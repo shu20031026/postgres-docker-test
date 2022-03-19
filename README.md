@@ -20,3 +20,8 @@ services:
 - 複数コンテナの管理も可能
 ### build
 - 階層内のdockerfileの位置を指定
+### ports
+- ports 5433:5432 は左がアクセス時, 右がコンテナからのアクセス時のポート番号
+### environment
+- environmentに値を指定することでdb, user, passwordを設定できる。ここではいずれも"admin"
+- POSTGRES_DB は省略すると USER 名と同じものが作成される
