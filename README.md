@@ -12,6 +12,6 @@ services:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
 ```
-## verssion 
+### verssion 
 - 使用している機能によってバージョンを選択
 - 1~3 まで存在。マイナーバージョンの指定も可
