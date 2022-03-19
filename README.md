@@ -71,7 +71,8 @@ services:
 
 ### docker-entrypoint-initdb.d
 - コンテナ立ち上げ時,初期設定としてSQLを走らせる際はシェルスクリプトを作成する。
-- /docker-entrypoint-initdb.d フォルダを作成しvolume設定をすることでフォルダ内部の.shファイルを実行してくれる。
+- PostgresSQLではdocker-entrypoint-initdb.dフォルダ内のshが読み込まれる.
+- dockerの場合は/docker-entrypoint-initdb.d フォルダを作成しvolume設定をすることでフォルダ内部の.shファイルを実行できるかんきょうにしてくれる。
 
 ### volunes
 - volumesを指定することでデータベースの情報を永続化できる
