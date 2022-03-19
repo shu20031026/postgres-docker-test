@@ -41,4 +41,15 @@ $ docker-compose down
 $ docker-compose exec コンテナ名 bash
 ```
 - ここではコンテナ名はdb
+### PostgresSQLへの接続
+```sh
+$ psql -U admin
+```
+- psql はコマンドラインからPostgresSQLに接続するツール
+- -U オプションはロール名を指定する　
+- -Uはデフォルトではpostgresとなっているためユーザの設定がうまく行ってない特はpostgresユーザのみで入れる
 
+### psqlの終了方法
+```sh
+admin=# exit
+```
