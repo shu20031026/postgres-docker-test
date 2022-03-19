@@ -1,6 +1,6 @@
 # postgres-docker-test
 
-## docker-compose.ymlの学習メモ
+## docker-compose.yml　メモ
 ```yml
 version: '3'
 services:
@@ -25,3 +25,9 @@ services:
 ### environment
 - environmentに値を指定することでdb, user, passwordを設定できる。ここではいずれも"admin"
 - POSTGRES_DB は省略すると USER 名と同じものが作成される
+
+## docker-compose メモ
+### コンテナの起動
+```sh
+$ docker-compose up -d
+```
