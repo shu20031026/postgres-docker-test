@@ -32,3 +32,13 @@ services:
 $ docker-compose up -d
 ```
 - -dオプションはデタッチドモードと言いバックグラウンドでコンテナを実行し、新しいコンテナ名を表示する
+### コンテナの停止
+```sh
+$ docker-compose down
+```
+### コンテナ内への接続
+```sh
+$ docker-compose exec コンテナ名 bash
+```
+- ここではコンテナ名はdb
+
