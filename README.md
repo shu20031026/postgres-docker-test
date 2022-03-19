@@ -61,4 +61,10 @@ admin=# exit
 
 ### volunes
 - volumesを指定することでデータベースの情報を永続化できる
-- 
+
+### キャッシュクリア方法
+```sh
+$ docker-compose down -v
+$ docker-compose build --no-cache
+$ docker-compose up -
+```
