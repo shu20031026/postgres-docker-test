@@ -55,6 +55,20 @@ admin=# exit
 ```
 
 ## コンテナ起動時のSQL発行
+```yml
+version: '3'
+services:
+  db:
+    build: .
+    ports:
+      - 5433:5432
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+```
+
 ### docker-entrypoint-initdb.d
 - コンテナ立ち上げ時,初期設定としてSQLを走らせる際はシェルスクリプトを作成する。
 - /docker-entrypoint-initdb.d フォルダを作成しvolume設定をすることでフォルダ内部の.shファイルを実行してくれる。
